@@ -7,6 +7,8 @@
 - Figma: approved design intent
 - Beads: engineering execution graph and dependency tracking
 - Hive: optional workflow collaboration layer
+- Tilth: optional code-perception layer for structural read, symbol lookup, and
+  callers/callees tracing
 - Git hosting platform: code review and release governance
 - `docs/`: durable documentation source of truth
 
@@ -22,3 +24,8 @@ Do not use OpenCode as:
 - a replacement for Hive approval and tracking
 - a replacement for Beads execution state when the team uses Beads-first flow
 - a replacement for NotebookLM, Linear, or Figma
+
+Do not use Tilth as:
+- persistent memory
+- orchestration
+- a replacement for project docs

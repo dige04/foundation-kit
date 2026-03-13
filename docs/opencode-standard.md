@@ -12,6 +12,7 @@ starter repository.
 - use OpenCode in a way that preserves the Hive lifecycle
 - keep Beads as the default engineering execution layer when the team uses task
   graphs
+- add Tilth only as an optional code-perception layer
 - treat NotebookLM as retrieval only
 - promote durable guidance into `docs/` or pod files
 
@@ -33,7 +34,7 @@ Linear / Figma / NotebookLM
       Hive + Beads runtime
             |
             v
-       OpenCode agents
+  OpenCode agents + Tilth MCP
             |
             v
  docs/ + pods/ + .hive/
@@ -44,10 +45,12 @@ Linear / Figma / NotebookLM
 - retrieval memory: `NotebookLM`
 - workflow memory: `Hive` and Beads task state
 - durable project memory: `docs/` and `pods/`
+- code perception: optional `Tilth`
 
 ## Related Standards
 
 - `docs/beads-standard.md`
+- `docs/tilth-integration.md`
 - `docs/agent-hive-standard.md`
 - `docs/integration-model.md`
 - `docs/code-standards.md`
@@ -60,3 +63,4 @@ Linear / Figma / NotebookLM
    setup is needed
 4. load the agent specs in `docs/opencode-agents/` as role contracts
 5. initialize Beads if your team uses Beads-first execution
+6. add Tilth only if the team wants stronger code navigation and search

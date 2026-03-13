@@ -57,15 +57,62 @@ bd init --stealth
 bd init --contributor
 ```
 
+## Tilth
+
+Tilth is an optional code-perception layer for OpenCode and other coding-agent
+hosts.
+
+Preferred local install:
+
+```bash
+cargo install tilth
+```
+
+Alternative installation paths:
+
+```bash
+npm install -g tilth
+```
+
+```bash
+npx tilth
+```
+
+Verify:
+
+```bash
+tilth --help
+```
+
+Wire Tilth into OpenCode user config:
+
+```bash
+tilth install opencode
+```
+
+Optional edit mode:
+
+```bash
+tilth install opencode --edit
+```
+
 ## Optional Tools
 
+- Linear MCP via the official remote server when the team wants issue access in
+  agent workflows
 - NotebookLM or NotebookLM MCP for retrieval
 - Hive plugin support through `opencode-hive`
+- Tilth for structural code reading and search
+
+See also:
+
+- `examples/opencode/opencode.team-stack.jsonc`
 
 ## First Read After Setup
 
 1. `docs/opencode-standard.md`
 2. `docs/beads-standard.md`
-3. `docs/agent-hive-standard.md`
-4. `docs/integration-model.md`
-5. `docs/code-standards.md`
+3. `docs/tilth-integration.md`
+4. `docs/agent-hive-standard.md`
+5. `docs/integration-model.md`
+6. `docs/code-standards.md`
